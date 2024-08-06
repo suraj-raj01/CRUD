@@ -1,0 +1,64 @@
+
+#hero{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+#display{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: auto;
+    text-align: center;
+}
+#form{
+    height: 55vh;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+    color: black;
+    box-shadow: 0px 0px 1px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding:0px 35px;
+}
+#form input{
+    width: 350px;
+}
+#footer{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid transparent;
+    border-top-color: black;
+    background-color: whitesmoke;
+    color: #000000a6;
+    font-weight: bold;
+}
+#table{
+    width: 90%;
+    margin:10px auto;
+}
+#table th {
+    background-color: deepskyblue ;
+    padding: 10px;
+}
+
+.demo{
+   body{
+    background-color: black;
+   }
+}
