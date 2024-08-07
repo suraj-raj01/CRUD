@@ -17,8 +17,8 @@
 
     <div id="display">
         <form action="">
-            <input type="text" placeholder="enter employee no." style="margin-top: 20px; padding:8px">
-            <input type="submit" value="search" style="margin-top: 20px; padding:8px">
+            <input type="text" placeholder="enter employee no." style="margin-top: 20px; padding:8px; border:1px solid deepskyblue">
+            <input type="submit" value="search" style="margin-top: 20px; padding:8px 15px; font-weight:500; background-color:deepskyblue; border:1px solid deepskyblue">
         </form>
     </div>
     <?php

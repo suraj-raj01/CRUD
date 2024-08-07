@@ -15,9 +15,35 @@
     include "include/navbar.php";
     ?>
 
-    <div id="hero">
-        <h1>Update Data</h1>
+<div id="display">
+        <table class="table table-bordered" id="table">
+            <thead>
+                <tr>
+                    <th scope="col">Employee Number</th>
+                    <th scope="col">Employee Name</th>
+                    <th scope="col">Employee Email</th>
+                    <th scope="col">Employee Salary</th>
+                    <th scope="col">Update Details</th>
+                </tr>
+            </thead>
+            <?php
+            $con = new mysqli("localhost", "root", "", "suraj");
+            $qry = "select * from employee";
+            $result = $con->query($qry);
+            while ($row = $result->fetch_assoc()) {
+                echo "<tr>";
+                echo "<td>" . $row["empno"] . "</td>";
+                echo "<td>" . $row["name"] . "</td>";
+                echo "<td>" . $row["email"] . "</td>";
+                echo "<td>" . $row["salary"] . "</td>";
+                echo "<td>" .'<i class="fa-solid fa-pen-to-square" ></i>'."  ".'<i class="fa-regular fa-trash-can"></i>'. "</td>";
+                echo "</tr>";
+            }
+            ?>
+
+        </table>
     </div>
+
     <?php
     include "include/footer.php";
     ?>

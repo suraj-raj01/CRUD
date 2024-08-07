@@ -17,7 +17,7 @@
 
     <div id="hero">
         <form method="post" action="save.php" id="form">
-            <h3>Insert Employee Details</h3><br>
+            <h3>Insert Employee Details</h3>
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="Enter employee no." name="empno">
             </div>
