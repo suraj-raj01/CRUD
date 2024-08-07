@@ -18,6 +18,10 @@
     margin: auto;
     text-align: center;
 }
+/* style for icons in update page */
+#display td a{
+    color: black;
+}
 #form{
     height: 55vh;
     width: 420px;
@@ -61,4 +65,18 @@
    body{
     background-color: black;
    }
+}
+#editdata{
+    height: 250px;
+    width: 420px;
+    font-weight: bold;
+}
+table th{
+    text-align: start;
+    padding: 0px 40px;
+}
+table td{
+    font-weight: 500;
+    text-align: start;
+    padding: 0px 40px;
 }

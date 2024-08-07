@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Dashboard-Update</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -15,7 +15,7 @@
     include "include/navbar.php";
     ?>
 
-<div id="display">
+    <div id="display" style="overflow-y: scroll;">
         <table class="table table-bordered" id="table">
             <thead>
                 <tr>
@@ -36,14 +36,27 @@
                 echo "<td>" . $row["name"] . "</td>";
                 echo "<td>" . $row["email"] . "</td>";
                 echo "<td>" . $row["salary"] . "</td>";
-                echo "<td>" .'<i class="fa-solid fa-pen-to-square" ></i>'."  ".'<i class="fa-regular fa-trash-can"></i>'. "</td>";
+                echo "<td>
+                    <a href='edit.php?empno=" . $row["empno"] . "'>
+                    <i class='fa-solid fa-pen-to-square'></i>
+                    </a>
+                    <a href='delete.php?empno=" . $row["empno"] . "' style='margin-left:20px'>
+                    <i class='fa-solid fa-trash-can'></i>
+                    </a>
+                </td>";
                 echo "</tr>";
             }
             ?>
 
         </table>
     </div>
-
+    <?php
+    if (isset($_GET["update"])) {
+        echo "<script>";
+        echo "alert('Data succesfully updated!!!')";
+        echo "</script>";
+    }
+    ?>
     <?php
     include "include/footer.php";
     ?>
