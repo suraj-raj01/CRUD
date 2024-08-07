@@ -1,5 +1,11 @@
+#navbar {
+    height: 10vh;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-bottom-color: black
+}
 
-#hero{
+#hero {
     height: 80vh;
     width: 100%;
     display: flex;
@@ -8,7 +14,8 @@
     justify-content: center;
     margin: auto;
 }
-#display{
+
+#display {
     height: 80vh;
     width: 100%;
     display: flex;
@@ -17,12 +24,19 @@
     justify-content: start;
     margin: auto;
     text-align: center;
+    background-color: white;
 }
+
 /* style for icons in update page */
-#display td a{
+#display td a {
     color: black;
 }
-#form{
+#display th{
+    position: sticky;
+    top: 0px;
+}
+
+#form {
     height: 55vh;
     width: 420px;
     display: flex;
@@ -34,12 +48,14 @@
     box-shadow: 0px 0px 1px;
     border-radius: 10px;
     text-transform: uppercase;
-    padding:0px 35px;
+    padding: 0px 35px;
 }
-#form input{
+
+#form input {
     width: 350px;
 }
-#footer{
+
+#footer {
     height: 10vh;
     width: 100%;
     display: flex;
@@ -52,31 +68,88 @@
     color: #000000a6;
     font-weight: bold;
 }
-#table{
+
+#table {
     width: 90%;
-    margin:10px auto;
+    margin: 10px auto;
 }
+
 #table th {
     background-color: whitesmoke;
     padding: 10px;
 }
 
-.demo{
-   body{
+.demo {
     background-color: black;
-   }
+    color: white;
+
+    #display {
+        background-color: black;
+    }
+
+    #table {
+        background-color: black;
+    }
+
+    #hero {
+        background-color: black;
+        color: white;
+    }
+
+    #navbar {
+        border-bottom-color: white;
+        background-color: black;
+        color: white;
+    }
+
+    #navbar a {
+        color: white;
+    }
+
+    #navbar i {
+        color: deepskyblue;
+    }
+    #navbar #home{
+        color: deepskyblue;
+    }
+    #form {
+        color: white;
+    }
+    form input{
+        background-color: transparent;
+        color: white;
+    }
+    form input::placeholder{
+        color: white;
+    }
+    #footer {
+        background-color: black;
+        color: white;
+        border-top-color: white;
+    }
+
+    table td {
+        background-color: black;
+        color: white;
+    }
+    table td i{
+        color: deepskyblue;
+    }
 }
-#editdata{
+
+#editdata {
     height: 250px;
     width: 420px;
     font-weight: bold;
 }
-table th{
+
+table th {
     text-align: start;
     padding: 0px 40px;
 }
-table td{
-    font-weight: 500;
+
+table td {
+    font-weight: 400;
     text-align: start;
     padding: 0px 40px;
 }
